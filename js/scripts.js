@@ -21,9 +21,23 @@
     saySomething(upperfirst);
     saySomething(middle);
 
-    var flipped = upperlast + middle + upperfirst;
+    var flipped = upperlast + upperfirst;
     saySomething(flipped)
 
-    var result = ("The cipher is " + result1 + ".");
+ 
+
+    var sentenceflip = origsentence + flipped;
+    saySomething(sentenceflip);
+
+    var length = origsentence.length;
+    saySomething(length);
+
+    lengthcharloc = parseInt(length) / 2;
+    saySomething (lengthcharloc);
+
+
+    var result = origsentence.charAt(lengthcharloc) + sentenceflip;
     saySomething(result);
 
+    var bonus = result.split("").reverse().join("");
+    saySomething(bonus);
